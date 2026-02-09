@@ -11,12 +11,13 @@ import java.util.List;
 
 // controller->service->dto->repository->model
 
-
+@CrossOrigin(origins="*")
 @RestController
 public class StudentController {
     private final StudentService service;
 
     public StudentController(StudentService service) {
+
         this.service = service;
     }
     // create Function API
